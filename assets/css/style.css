@@ -61,7 +61,6 @@ header nav li:hover{
   border: 2px solid black;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 5px;
   background-color: rgb(206, 198, 198)
 }
@@ -80,21 +79,21 @@ aside {
 aside h2{
   font-weight: bolder;
   font-size: 25px;
-  margin: 20px;
+  margin: 15px;
   text-align: center;
 }
 
 aside h3{
   font-weight: bold;
   font-size: 20px;
-  margin: 15px;
+  margin: 10px;
   text-align: left;
 }
 
 /*define the image width and align to center*/
 aside img {
   width: 100%;
-  align-items: center;
+  height: 100%;
 }
 
 aside i {
@@ -102,7 +101,7 @@ aside i {
 }
 
 aside progress {
-  margin: 10px;
+  margin: 8px;
 }
 
 /*define project container inside the Main container for Previous Projects*/
@@ -115,7 +114,7 @@ aside progress {
   flex-wrap: wrap;
   border: 5px solid black;
   background-color: rgb(206, 198, 198);
-  margin: 5px;
+  margin: 25px;
   position: relative;
 }
 
@@ -137,7 +136,7 @@ aside progress {
   position: relative;
 }
 
-img{
+.project img {
   width: 100%;
   height: 100%;
 }
@@ -148,7 +147,7 @@ img{
   background-color: gray;
   bottom: 10%;
   left: -2px;
-  width: 150px;
+  width: 180px;
   border: 5px solid black;
   align-items: center;
   text-align: left;

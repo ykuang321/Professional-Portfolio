@@ -8,7 +8,6 @@ Create a personal professional portfolio page from scratch.
 
 ```
 A hiring manager wants to view the potential employee's deployed portfolio of work samples to make hiring decision
-
 ```
 
 ## Acceptance Criteria
@@ -25,4 +24,5 @@ The personal professional portfolio needs to include:
 
 ## URL
 
+https://ykuang321.github.io/Professional-Portfolio/
 
