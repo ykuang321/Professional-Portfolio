@@ -1,0 +1,215 @@
+body{
+  background-color: #f1f1f1;
+}
+
+/*Header*/
+
+/*define header container*/
+header{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 1%;
+  font-family: "Gill sans", sans-serif;
+  font-weight: bolder;
+  color: white;
+  background-image: linear-gradient(rgb(52, 51, 51),grey,whitesmoke);
+  margin-bottom: 10px;
+}
+
+header h1{
+  display: inline-block;
+  font-size: 25px;
+  font-style: italic;
+}
+
+/*define navigation bar*/
+header nav{
+  margin: 10px;
+  float: right;
+  align-items: center;
+}
+
+/*define navigation bar listed item style*/
+header li{
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px;
+}
+
+/*change background color when user hover the item*/
+header nav li:hover{
+  background-color: rgb(143, 143, 218);
+  cursor: pointer;
+}
+
+/*background image between header and the main content*/
+.background{
+  height: 1200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/Tesla_Model_Y.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+}
+
+/*Main content*/
+
+/*define Main container, use flex so about me and previous projects are side by side*/
+.content {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  background-color: rgb(206, 198, 198)
+}
+
+/*define Aside container inside the Main container for About-me*/
+aside {
+  width: 20%;
+  height: 100%;
+  padding: 10px 10px;
+  background-color: grey;
+  font-family:'Times New Roman', Times, serif;
+  text-align: left;
+  margin: 25px
+}
+
+aside h2{
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 20px;
+  text-align: center;
+}
+
+aside h3{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px;
+  text-align: left;
+}
+
+/*define the image width and align to center*/
+aside img {
+  width: 100%;
+  align-items: center;
+}
+
+aside i {
+  margin: 10px;
+}
+
+aside progress {
+  margin: 10px;
+}
+
+/*define project container inside the Main container for Previous Projects*/
+.project {
+  width: 75%;
+  height: 100%;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 5px solid black;
+  background-color: rgb(206, 198, 198);
+  margin: 5px;
+  position: relative;
+}
+
+.project h2 {
+  width: 100%;
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 15px;
+  text-align: center;
+}
+
+
+/*define first project*/
+.first {
+  height: 50%;
+  width: 100%;
+  border: 5px solid black;
+  margin: 5px;
+  position: relative;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+/*add sidebar for project title and brief description of the project*/
+.sidebar{
+  position: absolute;
+  background-color: gray;
+  bottom: 10%;
+  left: -2px;
+  width: 150px;
+  border: 5px solid black;
+  align-items: center;
+  text-align: left;
+  color: white;
+}
+
+/*define place holder for future project*/
+.future {
+  height: 25%;
+  width: 45%;
+  border: 5px solid black;
+  margin: 5px;
+  position: relative;
+}
+
+/*Footer*/
+footer {
+  padding: 5px;
+  clear: both;
+  background-color: grey;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: white;
+}
+
+footer h2 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+footer p{
+  display: inline-block;
+  margin-right: 20px;
+  font-size: medium;
+}
+
+
+/* add media query for tablets and phones
+  1. change the flex direction 
+  2. reduce the size of background image
+  3. increase the side of aside selector
+ */
+@media screen and (max-width: 992px) {
+  main{
+    flex-direction: column;
+  }
+ 
+  .background {
+    height: 600px;
+    width: 100%;
+  }
+
+  .sidebar{
+    font-size: 0.8em;
+  }
+
+  aside {
+    width: 70%;
+  }
+
+}
+
+
+
